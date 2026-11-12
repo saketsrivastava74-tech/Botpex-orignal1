@@ -1,6 +1,7 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { basename, join, resolve } from 'node:path';
 
 const TEMPLATE_DIR = resolve(fileURLToPath(new URL('.', import.meta.url)), '../../../templates');
 
@@ -44,6 +45,6 @@ export function runInit(target: string, template: string): number {
 }
 
 function dirToName(dir: string): string {
-  const base = dir.split('/').pop() ?? 'my-bot';
+  const base = basename(resolve(dir));
   return base.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'my-bot';
 }

@@ -1,0 +1,11 @@
+{
+  "spec": "botpex/v1",
+  "name": "patrol-guard-bot",
+  "version": "0.1.0",
+  "description": "Botpex example distribution: patrols waypoints, detects hostiles, engages in combat, returns to post.",
+  "main": "./dist/main.js",
+  "kernel": { "api": "^0.1.0" },
+  "runtimes": ["mock", "native", "mineflayer"],
+  "permissions": ["world:read", "events:subscribe", "movement:control", "navigation:use", "combat:attack"],
+  "bot": { "displayName": "Patrol Guard", "tags": ["example", "combat", "patrol"] }
+}

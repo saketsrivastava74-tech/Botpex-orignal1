@@ -1,0 +1,13 @@
+[
+  { "mc": "1.20.4", "protocol": 765, "native": "supported", "mineflayer": "supported", "notes": "pre-configuration-phase protocol; fully verified path" },
+  { "mc": "1.21", "protocol": 767, "native": "best-effort", "mineflayer": "supported", "notes": "teleport-confirm handling required" },
+  { "mc": "1.21.1", "protocol": 767, "native": "best-effort", "mineflayer": "supported" },
+  { "mc": "1.21.3", "protocol": 768, "native": "best-effort", "mineflayer": "supported" },
+  { "mc": "1.21.4", "protocol": 769, "native": "best-effort", "mineflayer": "supported" },
+  { "mc": "1.21.5", "protocol": null, "native": "best-effort", "mineflayer": "supported", "notes": "chunk size auto-computation change (upstream #3641)" },
+  { "mc": "1.21.6", "protocol": null, "native": "best-effort", "mineflayer": "supported" },
+  { "mc": "1.21.8", "protocol": null, "native": "best-effort", "mineflayer": "supported" },
+  { "mc": "1.21.9", "protocol": null, "native": "best-effort", "mineflayer": "supported" },
+  { "mc": "1.21.11", "protocol": null, "native": "best-effort", "mineflayer": "supported", "notes": "latest confirmed mineflayer line before calendar versions (issue #3893)" },
+  { "mc": "26.1", "protocol": null, "native": "best-effort", "mineflayer": "supported", "notes": "first calendar-year release (Tiny Takeover, 2026-03-24)" }
+]

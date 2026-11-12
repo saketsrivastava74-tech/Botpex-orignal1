@@ -1,0 +1,41 @@
+{
+  "name": "botpex",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Botpex — One Kernel. Unlimited Bots. An open-source, modular Minecraft bot kernel.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "workspaces": [
+    "api",
+    "kernel",
+    "testing",
+    "compatibility",
+    "adapters",
+    "package-specification",
+    "extensions",
+    "runtimes/*",
+    "sdk",
+    "developer-tools",
+    "examples/*",
+    "templates/*"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && vitest run",
+    "test:watch": "vitest",
+    "bench": "npm run build && tsx benchmarks/run.ts",
+    "example:hello": "npm run build && tsx examples/hello-bot/src/main.ts",
+    "example:guard": "npm run build && tsx examples/patrol-guard/src/main.ts",
+    "cli": "npm run build && node developer-tools/dist/bin.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/semver": "^7.5.8",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^3.0.5"
+  }
+}

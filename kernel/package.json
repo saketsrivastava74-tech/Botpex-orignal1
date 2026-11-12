@@ -1,0 +1,27 @@
+{
+  "name": "@botpex/kernel",
+  "version": "0.1.0",
+  "description": "The Botpex kernel: entity, perception, movement, navigation, combat, inventory, behaviour, intelligence, event and runtime systems.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@botpex/api": "0.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

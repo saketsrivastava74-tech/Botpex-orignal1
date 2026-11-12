@@ -1,0 +1,28 @@
+{
+  "name": "@botpex/runtime-mineflayer",
+  "version": "0.1.0",
+  "description": "Botpex external runtime adapter: drives Mineflayer bots behind the unified IDriver port.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@botpex/api": "0.1.0",
+    "mineflayer": "^4.39.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

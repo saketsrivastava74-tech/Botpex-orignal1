@@ -1,0 +1,38 @@
+{
+  "name": "@botpex/sdk",
+  "version": "0.1.0",
+  "description": "Developer-first SDK for Botpex: createBot, behaviour/brain builders, BotManager.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@botpex/api": "0.1.0",
+    "@botpex/kernel": "0.1.0"
+  },
+  "peerDependencies": {
+    "@botpex/testing": "0.1.0",
+    "@botpex/runtime-native": "0.1.0",
+    "@botpex/runtime-mineflayer": "0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@botpex/testing": { "optional": true },
+    "@botpex/runtime-native": { "optional": true },
+    "@botpex/runtime-mineflayer": { "optional": true }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

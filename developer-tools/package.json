@@ -1,0 +1,30 @@
+{
+  "name": "@botpex/cli",
+  "version": "0.1.0",
+  "description": "Botpex developer tools: botpex init | run | doctor | list-runtimes.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "botpex": "dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@botpex/api": "0.1.0",
+    "@botpex/compatibility": "0.1.0",
+    "@botpex/kernel": "0.1.0",
+    "@botpex/package-spec": "0.1.0",
+    "@botpex/sdk": "0.1.0",
+    "@botpex/runtime-native": "0.1.0",
+    "@botpex/runtime-mineflayer": "0.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

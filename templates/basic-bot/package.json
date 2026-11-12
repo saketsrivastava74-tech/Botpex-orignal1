@@ -1,0 +1,24 @@
+{
+  "name": "@botpex/template-basic-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Botpex starter template: a minimal bot project you can build a distribution on.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/main.ts --runtime mock",
+    "start": "node dist/main.js",
+    "start:native": "tsx src/main.ts --runtime native"
+  },
+  "dependencies": {
+    "@botpex/api": "0.1.0",
+    "@botpex/kernel": "0.1.0",
+    "@botpex/sdk": "0.1.0",
+    "@botpex/testing": "0.1.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

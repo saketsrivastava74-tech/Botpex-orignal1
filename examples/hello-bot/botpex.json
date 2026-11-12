@@ -1,0 +1,11 @@
+{
+  "spec": "botpex/v1",
+  "name": "hello-bot",
+  "version": "0.1.0",
+  "description": "Botpex hello-world bot: perceives the world, wanders, greets players.",
+  "main": "./dist/main.js",
+  "kernel": { "api": "^0.1.0" },
+  "runtimes": ["mock", "native", "mineflayer"],
+  "permissions": ["world:read", "events:subscribe", "movement:control", "navigation:use", "chat:send"],
+  "bot": { "displayName": "Hello Bot", "tags": ["example", "social"] }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@botpex/runtime-native",
+  "version": "0.1.0",
+  "description": "Botpex native runtime: protocol-speaking Minecraft driver over minecraft-protocol + prismarine.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@botpex/api": "0.1.0",
+    "minecraft-data": "^3.119.0",
+    "minecraft-protocol": "^1.68.0",
+    "prismarine-chunk": "^1.41.0",
+    "prismarine-world": "^3.7.0",
+    "vec3": "^0.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
